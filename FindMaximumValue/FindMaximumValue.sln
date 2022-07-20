@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaximumValue", "FindMaximumValue\FindMaximumValue.csproj", "{4A178A5D-CBCB-407E-968D-F2331905E86C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A178A5D-CBCB-407E-968D-F2331905E86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A178A5D-CBCB-407E-968D-F2331905E86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A178A5D-CBCB-407E-968D-F2331905E86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A178A5D-CBCB-407E-968D-F2331905E86C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4067356-69DD-4D97-BA52-5942B5815275}
+	EndGlobalSection
+EndGlobal
