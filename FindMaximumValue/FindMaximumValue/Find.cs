@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FindMaximumValue
 {
-    public class Find<T> where T : IComparable
+    public class Find
     {
-        public void ToCompare(T a, T b, T c)
+        public void ToCompare(string a, string b, string c)
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0 ||
                 a.CompareTo(b) >= 0 && a.CompareTo(c) > 0 ||
