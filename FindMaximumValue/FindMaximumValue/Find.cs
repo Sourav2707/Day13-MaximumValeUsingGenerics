@@ -8,36 +8,24 @@ namespace FindMaximumValue
 {
     public class Find<T> where T : IComparable //class type generics
     {
-        public T a, b, c;
-        public Find(T a, T b, T c)
+        public T[] values;
+        public Find(T[] values)
         {
-            this.a = a;
-            this.b = b;
-            this.c = c;
+            this.values = values;
         }
-
-        public static T ToCompare(T a, T b, T c) 
+        public T[] Sorting(T[] values)
         {
-            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0 ||
-                a.CompareTo(b) >= 0 && a.CompareTo(c) > 0 ||
-                a.CompareTo(b) > 0 && a.CompareTo(c) >= 0)
-            {
-                return a;
-            }
-            else if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0 ||
-                b.CompareTo(a) >= 0 && b.CompareTo(c) > 0 ||
-                b.CompareTo(a) > 0 && b.CompareTo(c) >= 0)
-            {
-                return b;
-            }
-            else
-            {
-                return c;
-            }
+            Array.Sort(values);
+            return values;
+        }
+        public T ToCompare(params T[] values) 
+        {
+            T[] compare = Sorting(values);
+            return compare[^1];
         }
         public void Max()
         {
-            T max = Find<T>.ToCompare(this.a, this.b, this.c);
+            T max = ToCompare(this.values);
             Console.WriteLine($"{max} is maximum");
         }
     }
